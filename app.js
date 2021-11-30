@@ -5,6 +5,7 @@ const stuffRoutes = require ('./routes/stuff')
 const userRoutes = require ('./routes/user')
 const app = express();
 const path = require ('path')
+const connectdb = require('connect');
 
 mongoose.connect('mongodb+srv://thomas:thomas123@cluster0.1q6zx.mongodb.net/occ?retryWrites=true&w=majority',
   { useNewUrlParser: true,
